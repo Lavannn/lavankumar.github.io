@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +33,6 @@
       line-height: 1.6;
     }
 
-    /* ── NOISE TEXTURE OVERLAY ── */
     body::before {
       content: '';
       position: fixed;
@@ -44,7 +42,6 @@
       z-index: 0;
     }
 
-    /* ── NAV ── */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -93,7 +90,6 @@
       font-weight: 600 !important;
     }
 
-    /* ── HERO ── */
     .hero {
       position: relative;
       min-height: 100vh;
@@ -149,10 +145,7 @@
       margin-bottom: 1.5rem;
     }
 
-    h1 em {
-      font-style: italic;
-      color: var(--cyan);
-    }
+    h1 em { font-style: italic; color: var(--cyan); }
 
     .hero-desc {
       font-size: 1.05rem;
@@ -163,11 +156,7 @@
       font-weight: 300;
     }
 
-    .hero-actions {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 
     .btn-primary {
       background: var(--cyan);
@@ -182,10 +171,7 @@
       transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(0,200,224,0.3);
-    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,200,224,0.3); }
 
     .btn-outline {
       border: 1px solid rgba(255,255,255,0.2);
@@ -199,12 +185,8 @@
       transition: border-color 0.2s, background 0.2s;
     }
 
-    .btn-outline:hover {
-      border-color: var(--cyan);
-      background: rgba(0,200,224,0.06);
-    }
+    .btn-outline:hover { border-color: var(--cyan); background: rgba(0,200,224,0.06); }
 
-    /* ── HERO STATS ── */
     .hero-visual {
       position: relative;
       z-index: 1;
@@ -214,33 +196,19 @@
       gap: 1rem;
     }
 
-    .hero-photo-card {
-      position: relative;
-      width: 340px;
-    }
+    .hero-photo-card { position: relative; width: 340px; }
 
     .hero-photo-border {
       position: absolute;
       top: -12px; right: -12px;
-      width: 100%;
-      height: 100%;
+      width: 100%; height: 100%;
       border: 2px solid var(--cyan);
       border-radius: 4px;
       opacity: 0.4;
     }
 
-    .hero-photo {
-      width: 340px;
-      height: 400px;
-      object-fit: cover;
-      border-radius: 4px;
-      display: block;
-      background: linear-gradient(135deg, #1B4FD8 0%, #0A1628 100%);
-    }
-
     .hero-photo-placeholder {
-      width: 340px;
-      height: 400px;
+      width: 340px; height: 400px;
       border-radius: 4px;
       background: linear-gradient(135deg, var(--navy-mid) 0%, #0d1f3c 100%);
       border: 1px solid var(--border);
@@ -252,8 +220,7 @@
     }
 
     .initials-badge {
-      width: 100px;
-      height: 100px;
+      width: 100px; height: 100px;
       border-radius: 50%;
       background: linear-gradient(135deg, var(--blue), var(--cyan));
       display: flex;
@@ -264,12 +231,7 @@
       color: white;
     }
 
-    .hero-stats {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.75rem;
-      width: 340px;
-    }
+    .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; width: 340px; }
 
     .stat-card {
       background: var(--card-bg);
@@ -279,27 +241,10 @@
       backdrop-filter: blur(10px);
     }
 
-    .stat-number {
-      font-family: 'DM Serif Display', serif;
-      font-size: 2rem;
-      color: var(--cyan);
-      line-height: 1;
-    }
+    .stat-number { font-family: 'DM Serif Display', serif; font-size: 2rem; color: var(--cyan); line-height: 1; }
+    .stat-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); margin-top: 0.25rem; }
 
-    .stat-label {
-      font-size: 0.7rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      margin-top: 0.25rem;
-    }
-
-    /* ── SECTION COMMON ── */
-    section {
-      position: relative;
-      z-index: 1;
-      padding: 6rem 4rem;
-    }
+    section { position: relative; z-index: 1; padding: 6rem 4rem; }
 
     .section-eyebrow {
       display: inline-flex;
@@ -312,36 +257,13 @@
       margin-bottom: 1rem;
     }
 
-    .section-eyebrow::before {
-      content: '';
-      display: block;
-      width: 24px;
-      height: 1px;
-      background: var(--cyan);
-    }
+    .section-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--cyan); }
 
-    h2 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.1;
-      margin-bottom: 1rem;
-    }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 1rem; }
+    h2 em { font-style: italic; color: var(--cyan); }
 
-    h2 em {
-      font-style: italic;
-      color: var(--cyan);
-    }
+    .section-desc { font-size: 1rem; color: var(--warm-gray); max-width: 580px; line-height: 1.75; font-weight: 300; margin-bottom: 3rem; }
 
-    .section-desc {
-      font-size: 1rem;
-      color: var(--warm-gray);
-      max-width: 580px;
-      line-height: 1.75;
-      font-weight: 300;
-      margin-bottom: 3rem;
-    }
-
-    /* ── IMPACT STRIP ── */
     .impact-strip {
       background: var(--navy-mid);
       border-top: 1px solid var(--border);
@@ -352,9 +274,7 @@
       gap: 2rem;
     }
 
-    .impact-item {
-      text-align: center;
-    }
+    .impact-item { text-align: center; }
 
     .impact-number {
       font-family: 'DM Serif Display', serif;
@@ -366,15 +286,8 @@
       background-clip: text;
     }
 
-    .impact-label {
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--warm-gray);
-      margin-top: 0.5rem;
-    }
+    .impact-label { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--warm-gray); margin-top: 0.5rem; }
 
-    /* ── SERVICES ── */
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -385,20 +298,11 @@
       overflow: hidden;
     }
 
-    .service-card {
-      background: var(--navy);
-      padding: 2.5rem;
-      position: relative;
-      transition: background 0.3s;
-    }
-
-    .service-card:hover {
-      background: var(--navy-mid);
-    }
+    .service-card { background: var(--navy); padding: 2.5rem; position: relative; transition: background 0.3s; }
+    .service-card:hover { background: var(--navy-mid); }
 
     .service-icon {
-      width: 48px;
-      height: 48px;
+      width: 48px; height: 48px;
       border-radius: 50%;
       background: rgba(0,200,224,0.1);
       border: 1px solid rgba(0,200,224,0.2);
@@ -409,19 +313,8 @@
       font-size: 1.3rem;
     }
 
-    .service-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.15rem;
-      margin-bottom: 0.75rem;
-      color: var(--offwhite);
-    }
-
-    .service-desc {
-      font-size: 0.85rem;
-      color: var(--warm-gray);
-      line-height: 1.7;
-      font-weight: 300;
-    }
+    .service-title { font-family: 'DM Serif Display', serif; font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--offwhite); }
+    .service-desc { font-size: 0.85rem; color: var(--warm-gray); line-height: 1.7; font-weight: 300; }
 
     .service-tag {
       display: inline-block;
@@ -435,57 +328,31 @@
       border-radius: 2px;
     }
 
-    /* ── EXPERIENCE TIMELINE ── */
-    .timeline {
-      position: relative;
-      padding-left: 2rem;
-      max-width: 860px;
-    }
+    .timeline { position: relative; padding-left: 2rem; max-width: 860px; }
 
     .timeline::before {
       content: '';
       position: absolute;
-      left: 0;
-      top: 8px;
-      bottom: 8px;
+      left: 0; top: 8px; bottom: 8px;
       width: 1px;
       background: linear-gradient(to bottom, var(--cyan), transparent);
     }
 
-    .timeline-item {
-      position: relative;
-      padding-left: 2.5rem;
-      padding-bottom: 3rem;
-    }
-
+    .timeline-item { position: relative; padding-left: 2.5rem; padding-bottom: 3rem; }
     .timeline-item:last-child { padding-bottom: 0; }
 
     .timeline-dot {
       position: absolute;
-      left: -2rem;
-      top: 6px;
-      width: 10px;
-      height: 10px;
+      left: -2rem; top: 6px;
+      width: 10px; height: 10px;
       border-radius: 50%;
       background: var(--cyan);
       border: 2px solid var(--navy);
       box-shadow: 0 0 12px var(--cyan);
     }
 
-    .timeline-meta {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    .timeline-period {
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--cyan);
-    }
+    .timeline-meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .timeline-period { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cyan); }
 
     .timeline-company {
       font-size: 0.75rem;
@@ -496,26 +363,9 @@
       border-radius: 2px;
     }
 
-    .timeline-role {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.2rem;
-      color: var(--offwhite);
-      margin-bottom: 0.75rem;
-    }
-
-    .timeline-desc {
-      font-size: 0.875rem;
-      color: var(--warm-gray);
-      line-height: 1.75;
-      font-weight: 300;
-    }
-
-    .timeline-highlights {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
+    .timeline-role { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--offwhite); margin-bottom: 0.75rem; }
+    .timeline-desc { font-size: 0.875rem; color: var(--warm-gray); line-height: 1.75; font-weight: 300; }
+    .timeline-highlights { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
 
     .highlight-chip {
       font-size: 0.65rem;
@@ -528,12 +378,7 @@
       border-radius: 2px;
     }
 
-    /* ── CASE STUDIES ── */
-    .cases-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-    }
+    .cases-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 
     .case-card {
       background: var(--card-bg);
@@ -545,10 +390,7 @@
       transition: border-color 0.3s, transform 0.3s;
     }
 
-    .case-card:hover {
-      border-color: rgba(0,200,224,0.3);
-      transform: translateY(-4px);
-    }
+    .case-card:hover { border-color: rgba(0,200,224,0.3); transform: translateY(-4px); }
 
     .case-card::before {
       content: '';
@@ -558,99 +400,20 @@
       background: linear-gradient(90deg, var(--cyan), transparent);
     }
 
-    .case-number {
-      font-family: 'DM Serif Display', serif;
-      font-size: 3.5rem;
-      color: rgba(255,255,255,0.04);
-      position: absolute;
-      top: 1rem;
-      right: 1.5rem;
-      line-height: 1;
-    }
+    .case-number { font-family: 'DM Serif Display', serif; font-size: 3.5rem; color: rgba(255,255,255,0.04); position: absolute; top: 1rem; right: 1.5rem; line-height: 1; }
+    .case-industry { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cyan); margin-bottom: 0.75rem; }
+    .case-title { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--offwhite); margin-bottom: 1rem; line-height: 1.3; }
+    .case-desc { font-size: 0.85rem; color: var(--warm-gray); line-height: 1.7; font-weight: 300; }
+    .case-outcome { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--gold); letter-spacing: 0.05em; }
 
-    .case-industry {
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--cyan);
-      margin-bottom: 0.75rem;
-    }
-
-    .case-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.2rem;
-      color: var(--offwhite);
-      margin-bottom: 1rem;
-      line-height: 1.3;
-    }
-
-    .case-desc {
-      font-size: 0.85rem;
-      color: var(--warm-gray);
-      line-height: 1.7;
-      font-weight: 300;
-    }
-
-    .case-outcome {
-      margin-top: 1.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.78rem;
-      color: var(--gold);
-      letter-spacing: 0.05em;
-    }
-
-    /* ── SKILLS ── */
-    .skills-layout {
-      display: grid;
-      grid-template-columns: 1fr 1.5fr;
-      gap: 4rem;
-      align-items: start;
-    }
-
-    .skills-group-title {
-      font-size: 0.7rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      margin-bottom: 1rem;
-    }
-
-    .skills-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .skill-bar-wrap {
-      display: flex;
-      flex-direction: column;
-      gap: 0.35rem;
-    }
-
-    .skill-bar-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .skill-name {
-      font-size: 0.82rem;
-      color: var(--offwhite);
-    }
-
-    .skill-pct {
-      font-size: 0.72rem;
-      color: var(--text-dim);
-    }
-
-    .skill-bar-track {
-      height: 3px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 2px;
-      overflow: hidden;
-    }
+    .skills-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: start; }
+    .skills-group-title { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 1rem; }
+    .skills-list { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2.5rem; }
+    .skill-bar-wrap { display: flex; flex-direction: column; gap: 0.35rem; }
+    .skill-bar-header { display: flex; justify-content: space-between; align-items: center; }
+    .skill-name { font-size: 0.82rem; color: var(--offwhite); }
+    .skill-pct { font-size: 0.72rem; color: var(--text-dim); }
+    .skill-bar-track { height: 3px; background: rgba(255,255,255,0.08); border-radius: 2px; overflow: hidden; }
 
     .skill-bar-fill {
       height: 100%;
@@ -660,16 +423,9 @@
       animation: barGrow 1.2s ease forwards;
     }
 
-    @keyframes barGrow {
-      from { transform: scaleX(0); }
-      to   { transform: scaleX(1); }
-    }
+    @keyframes barGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 
-    .certs-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
+    .certs-grid { display: flex; flex-direction: column; gap: 0.75rem; }
 
     .cert-item {
       display: flex;
@@ -681,55 +437,19 @@
       border-radius: 3px;
     }
 
-    .cert-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--cyan);
-      margin-top: 0.45rem;
-      flex-shrink: 0;
-    }
+    .cert-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); margin-top: 0.45rem; flex-shrink: 0; }
+    .cert-name { font-size: 0.82rem; color: var(--offwhite); line-height: 1.4; }
+    .cert-org { font-size: 0.72rem; color: var(--text-dim); margin-top: 0.15rem; }
 
-    .cert-name {
-      font-size: 0.82rem;
-      color: var(--offwhite);
-      line-height: 1.4;
-    }
+    .contact-section { background: var(--navy-mid); border-top: 1px solid var(--border); }
 
-    .cert-org {
-      font-size: 0.72rem;
-      color: var(--text-dim);
-      margin-top: 0.15rem;
-    }
+    .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
 
-    /* ── CONTACT ── */
-    .contact-section {
-      background: var(--navy-mid);
-      border-top: 1px solid var(--border);
-    }
-
-    .contact-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 6rem;
-      align-items: center;
-    }
-
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-    }
+    .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+    .contact-item { display: flex; align-items: center; gap: 1.25rem; }
 
     .contact-icon {
-      width: 44px;
-      height: 44px;
+      width: 44px; height: 44px;
       border-radius: 50%;
       background: rgba(0,200,224,0.1);
       border: 1px solid rgba(0,200,224,0.2);
@@ -743,74 +463,17 @@
     .contact-detail { font-size: 0.9rem; color: var(--offwhite); }
     .contact-detail small { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); display: block; margin-bottom: 0.15rem; }
 
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-    }
-
-    .form-group label {
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-    }
-
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-      background: rgba(255,255,255,0.04);
+    /* ── GOOGLE FORM WRAPPER ── */
+    .google-form-wrap {
+      background: rgba(255,255,255,0.03);
       border: 1px solid var(--border);
-      border-radius: 2px;
-      padding: 0.8rem 1rem;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.9rem;
-      color: var(--offwhite);
-      outline: none;
-      transition: border-color 0.2s;
-      width: 100%;
+      border-radius: 4px;
+      overflow: hidden;
+      padding: 0.5rem;
     }
 
-    .form-group select option { background: var(--navy-mid); color: var(--offwhite); }
+    .google-form-wrap iframe { border-radius: 3px; display: block; }
 
-    .form-group input:focus,
-    .form-group textarea:focus,
-    .form-group select:focus {
-      border-color: var(--cyan);
-    }
-
-    .form-group textarea { height: 120px; resize: vertical; }
-
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-
-    .btn-submit {
-      background: var(--cyan);
-      color: var(--navy);
-      padding: 1rem;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      border: none;
-      border-radius: 2px;
-      cursor: pointer;
-      transition: opacity 0.2s, transform 0.2s;
-      margin-top: 0.5rem;
-    }
-
-    .btn-submit:hover {
-      opacity: 0.9;
-      transform: translateY(-2px);
-    }
-
-    /* ── FOOTER ── */
     footer {
       padding: 2rem 4rem;
       border-top: 1px solid var(--border);
@@ -819,40 +482,14 @@
       align-items: center;
     }
 
-    .footer-logo {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1rem;
-      color: var(--offwhite);
-    }
-
+    .footer-logo { font-family: 'DM Serif Display', serif; font-size: 1rem; color: var(--offwhite); }
     .footer-logo span { color: var(--cyan); }
+    .footer-copy { font-size: 0.75rem; color: var(--text-dim); }
 
-    .footer-copy {
-      font-size: 0.75rem;
-      color: var(--text-dim);
-    }
+    .about-layout { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 5rem; align-items: start; }
+    .about-text p { font-size: 1rem; color: var(--warm-gray); line-height: 1.85; font-weight: 300; margin-bottom: 1.25rem; }
 
-    /* ── ABOUT SECTION ── */
-    .about-layout {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 5rem;
-      align-items: start;
-    }
-
-    .about-text p {
-      font-size: 1rem;
-      color: var(--warm-gray);
-      line-height: 1.85;
-      font-weight: 300;
-      margin-bottom: 1.25rem;
-    }
-
-    .competencies-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.5rem;
-    }
+    .competencies-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
 
     .competency-chip {
       font-size: 0.72rem;
@@ -866,31 +503,17 @@
       transition: border-color 0.2s, color 0.2s;
     }
 
-    .competency-chip:hover {
-      border-color: rgba(0,200,224,0.4);
-      color: var(--cyan);
-    }
+    .competency-chip:hover { border-color: rgba(0,200,224,0.4); color: var(--cyan); }
 
-    /* ── ANIMATIONS ── */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
 
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       nav { padding: 1rem 1.5rem; }
       .nav-links { display: none; }
       .hero { grid-template-columns: 1fr; padding: 6rem 1.5rem 3rem; gap: 3rem; }
       .hero-visual { align-items: center; }
       .hero-photo-card, .hero-photo-placeholder { width: 280px; }
-      .hero-photo { width: 280px; height: 320px; }
       .hero-stats { width: 280px; }
       .impact-strip { grid-template-columns: repeat(2,1fr); padding: 2rem 1.5rem; }
       section { padding: 4rem 1.5rem; }
@@ -900,7 +523,7 @@
       .about-layout { grid-template-columns: 1fr; gap: 2rem; }
       .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
       footer { flex-direction: column; gap: 1rem; text-align: center; padding: 2rem 1.5rem; }
-      .form-row { grid-template-columns: 1fr; }
+      .google-form-wrap iframe { width: 100% !important; }
     }
   </style>
 </head>
@@ -922,19 +545,15 @@
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid-lines"></div>
-
   <div class="hero-content">
     <div class="hero-eyebrow">People Analytics · HR Transformation</div>
     <h1>Turning <em>Workforce<br>Data</em> into<br>Strategic Gold</h1>
-    <p class="hero-desc">
-      16+ years transforming HR across Big 4 Consulting, Manufacturing, Real Estate, Retail & Aviation. I help organizations build predictive models, interactive dashboards, and data-driven talent strategies that deliver measurable business impact.
-    </p>
+    <p class="hero-desc">16+ years transforming HR across Big 4 Consulting, Manufacturing, Real Estate, Retail & Aviation. I help organizations build predictive models, interactive dashboards, and data-driven talent strategies that deliver measurable business impact.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">Engage Me as Consultant</a>
       <a href="#cases" class="btn-outline">View Case Studies</a>
     </div>
   </div>
-
   <div class="hero-visual">
     <div class="hero-photo-card">
       <div class="hero-photo-border"></div>
@@ -944,44 +563,20 @@
       </div>
     </div>
     <div class="hero-stats">
-      <div class="stat-card">
-        <div class="stat-number">16+</div>
-        <div class="stat-label">Years Experience</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">7</div>
-        <div class="stat-label">Industries Served</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">50+</div>
-        <div class="stat-label">Stores Optimized</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">15+</div>
-        <div class="stat-label">Certifications</div>
-      </div>
+      <div class="stat-card"><div class="stat-number">16+</div><div class="stat-label">Years Experience</div></div>
+      <div class="stat-card"><div class="stat-number">7</div><div class="stat-label">Industries Served</div></div>
+      <div class="stat-card"><div class="stat-number">50+</div><div class="stat-label">Stores Optimized</div></div>
+      <div class="stat-card"><div class="stat-number">15+</div><div class="stat-label">Certifications</div></div>
     </div>
   </div>
 </section>
 
 <!-- IMPACT STRIP -->
 <div class="impact-strip">
-  <div class="impact-item fade-in">
-    <div class="impact-number">30%</div>
-    <div class="impact-label">Avg. Reduction in Time-to-Hire</div>
-  </div>
-  <div class="impact-item fade-in">
-    <div class="impact-number">24%</div>
-    <div class="impact-label">Revenue Growth via Effective PMS</div>
-  </div>
-  <div class="impact-item fade-in">
-    <div class="impact-number">2.5×</div>
-    <div class="impact-label">Better Succession Planning Outcomes</div>
-  </div>
-  <div class="impact-item fade-in">
-    <div class="impact-number">6+</div>
-    <div class="impact-label">Global Organizations Transformed</div>
-  </div>
+  <div class="impact-item fade-in"><div class="impact-number">30%</div><div class="impact-label">Avg. Reduction in Time-to-Hire</div></div>
+  <div class="impact-item fade-in"><div class="impact-number">24%</div><div class="impact-label">Revenue Growth via Effective PMS</div></div>
+  <div class="impact-item fade-in"><div class="impact-number">2.5×</div><div class="impact-label">Better Succession Planning Outcomes</div></div>
+  <div class="impact-item fade-in"><div class="impact-number">6+</div><div class="impact-label">Global Organizations Transformed</div></div>
 </div>
 
 <!-- ABOUT -->
@@ -990,15 +585,9 @@
     <div class="about-text fade-in">
       <div class="section-eyebrow">About</div>
       <h2>A Strategist at the <em>Intersection</em> of HR & Data Science</h2>
-      <p>
-        I am a results-driven People Analytics & HR Transformation expert with deep experience across Big 4 Consulting (Deloitte), IT (Cognizant), Engineering (MWH Global), Retail (Landmark Group), Manufacturing (Emirates Steel Arkan), Real Estate (DAMAC Properties), and Aviation (Waisl).
-      </p>
-      <p>
-        My work centers on transforming raw HR data into actionable intelligence — through predictive attrition models, ML-powered workforce optimization, performance analytics, and self-service reporting ecosystems that empower leadership to make faster, smarter decisions.
-      </p>
-      <p>
-        As the founder of <strong style="color:var(--offwhite);">TASTHA INTELION</strong>, I now offer these capabilities as a consulting partner to organizations that want enterprise-grade People Analytics without the overhead of a full internal team.
-      </p>
+      <p>I am a results-driven People Analytics & HR Transformation expert with deep experience across Big 4 Consulting (Deloitte), IT (Cognizant), Engineering (MWH Global), Retail (Landmark Group), Manufacturing (Emirates Steel Arkan), Real Estate (DAMAC Properties), and Aviation (Waisl).</p>
+      <p>My work centers on transforming raw HR data into actionable intelligence — through predictive attrition models, ML-powered workforce optimization, performance analytics, and self-service reporting ecosystems that empower leadership to make faster, smarter decisions.</p>
+      <p>As the founder of <strong style="color:var(--offwhite);">TASTHA INTELION</strong>, I now offer these capabilities as a consulting partner to organizations that want enterprise-grade People Analytics without the overhead of a full internal team.</p>
     </div>
     <div class="fade-in">
       <p class="skills-group-title">Core Competencies</p>
@@ -1024,49 +613,12 @@
   <h2>What I Deliver for <em>Your Organization</em></h2>
   <p class="section-desc">Flexible, outcome-focused consulting engagements from strategy to execution — tailored to your HR maturity and business goals.</p>
   <div class="services-grid fade-in">
-
-    <div class="service-card">
-      <div class="service-icon">📊</div>
-      <div class="service-title">People Analytics Strategy</div>
-      <p class="service-desc">Design and implement end-to-end analytics frameworks. Define KPIs, establish data governance, and build self-service reporting ecosystems that scale with your organization.</p>
-      <span class="service-tag">Strategy · Design · Governance</span>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">🖥️</div>
-      <div class="service-title">Dashboard & Visualization</div>
-      <p class="service-desc">Build interactive, executive-ready dashboards in Power BI, Tableau, or R Shiny covering the full employee lifecycle — recruitment to retirement.</p>
-      <span class="service-tag">Power BI · Tableau · R Studio</span>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">🤖</div>
-      <div class="service-title">Predictive Modelling</div>
-      <p class="service-desc">Develop attrition prediction models, hiring optimization algorithms, course completion classifiers, and employee clustering using R, Python, and H2O.</p>
-      <span class="service-tag">ML · Regression · Clustering</span>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">🎯</div>
-      <div class="service-title">Performance & KPI Design</div>
-      <p class="service-desc">Define SMART KPIs for Sales and Non-Sales functions, build balanced scorecards, and benchmark operational unit performance against industry standards.</p>
-      <span class="service-tag">OKRs · Balanced Scorecard</span>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">🔄</div>
-      <div class="service-title">HR Process Transformation</div>
-      <p class="service-desc">Assess, redesign, and automate core HR workflows — onboarding, exit management, compliance — and implement tools like ATS, PMS, and engagement platforms.</p>
-      <span class="service-tag">Automation · SAP SF · Zoho</span>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">📈</div>
-      <div class="service-title">Employee Engagement & Retention</div>
-      <p class="service-desc">Design pulse and engagement surveys, analyze sentiment data, identify flight-risk segments, and recommend targeted interventions to reduce unwanted attrition.</p>
-      <span class="service-tag">Survey Design · Retention Strategy</span>
-    </div>
-
+    <div class="service-card"><div class="service-icon">📊</div><div class="service-title">People Analytics Strategy</div><p class="service-desc">Design and implement end-to-end analytics frameworks. Define KPIs, establish data governance, and build self-service reporting ecosystems that scale with your organization.</p><span class="service-tag">Strategy · Design · Governance</span></div>
+    <div class="service-card"><div class="service-icon">🖥️</div><div class="service-title">Dashboard & Visualization</div><p class="service-desc">Build interactive, executive-ready dashboards in Power BI, Tableau, or R Shiny covering the full employee lifecycle — recruitment to retirement.</p><span class="service-tag">Power BI · Tableau · R Studio</span></div>
+    <div class="service-card"><div class="service-icon">🤖</div><div class="service-title">Predictive Modelling</div><p class="service-desc">Develop attrition prediction models, hiring optimization algorithms, course completion classifiers, and employee clustering using R, Python, and H2O.</p><span class="service-tag">ML · Regression · Clustering</span></div>
+    <div class="service-card"><div class="service-icon">🎯</div><div class="service-title">Performance & KPI Design</div><p class="service-desc">Define SMART KPIs for Sales and Non-Sales functions, build balanced scorecards, and benchmark operational unit performance against industry standards.</p><span class="service-tag">OKRs · Balanced Scorecard</span></div>
+    <div class="service-card"><div class="service-icon">🔄</div><div class="service-title">HR Process Transformation</div><p class="service-desc">Assess, redesign, and automate core HR workflows — onboarding, exit management, compliance — and implement tools like ATS, PMS, and engagement platforms.</p><span class="service-tag">Automation · SAP SF · Zoho</span></div>
+    <div class="service-card"><div class="service-icon">📈</div><div class="service-title">Employee Engagement & Retention</div><p class="service-desc">Design pulse and engagement surveys, analyze sentiment data, identify flight-risk segments, and recommend targeted interventions to reduce unwanted attrition.</p><span class="service-tag">Survey Design · Retention Strategy</span></div>
   </div>
 </section>
 
@@ -1075,99 +627,49 @@
   <div class="section-eyebrow">Experience</div>
   <h2>16 Years. 7 Industries. <em>One Mission.</em></h2>
   <p class="section-desc">A career built on turning HR data into decisions — across the world's most demanding organisations.</p>
-
   <div class="timeline fade-in">
-
     <div class="timeline-item">
       <div class="timeline-dot"></div>
-      <div class="timeline-meta">
-        <span class="timeline-period">Jul 2024 – Present</span>
-        <span class="timeline-company">Waisl Limited · Hyderabad, India</span>
-      </div>
+      <div class="timeline-meta"><span class="timeline-period">Jul 2024 – Present</span><span class="timeline-company">Waisl Limited · Hyderabad, India</span></div>
       <div class="timeline-role">Senior Manager — People Analytics, Tools & Transformation</div>
       <p class="timeline-desc">Leading comprehensive HR process transformation; deploying PMS, ATS and engagement platforms; building ML classification models to predict Udemy course completion; standardizing exit, onboarding and compliance workflows.</p>
-      <div class="timeline-highlights">
-        <span class="highlight-chip">HR Tech Deployment</span>
-        <span class="highlight-chip">ML Classification</span>
-        <span class="highlight-chip">Process Automation</span>
-      </div>
+      <div class="timeline-highlights"><span class="highlight-chip">HR Tech Deployment</span><span class="highlight-chip">ML Classification</span><span class="highlight-chip">Process Automation</span></div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-dot"></div>
-      <div class="timeline-meta">
-        <span class="timeline-period">Jul 2023 – Dec 2023</span>
-        <span class="timeline-company">DAMAC Properties · Dubai, UAE</span>
-      </div>
+      <div class="timeline-meta"><span class="timeline-period">Jul 2023 – Dec 2023</span><span class="timeline-company">DAMAC Properties · Dubai, UAE</span></div>
       <div class="timeline-role">Senior Consultant — Performance Analytics</div>
       <p class="timeline-desc">Defined and automated SMART KPIs for Sales & Non-Sales teams via Power BI; conducted attrition driver analysis; used clustering to personalise HR policies; developed balanced scorecards for leadership.</p>
-      <div class="timeline-highlights">
-        <span class="highlight-chip">Power BI Automation</span>
-        <span class="highlight-chip">KPI Design</span>
-        <span class="highlight-chip">Attrition Clustering</span>
-      </div>
+      <div class="timeline-highlights"><span class="highlight-chip">Power BI Automation</span><span class="highlight-chip">KPI Design</span><span class="highlight-chip">Attrition Clustering</span></div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-dot"></div>
-      <div class="timeline-meta">
-        <span class="timeline-period">Feb 2019 – Dec 2022</span>
-        <span class="timeline-company">Emirates Steel Arkan · Abu Dhabi, UAE</span>
-      </div>
+      <div class="timeline-meta"><span class="timeline-period">Feb 2019 – Dec 2022</span><span class="timeline-company">Emirates Steel Arkan · Abu Dhabi, UAE</span></div>
       <div class="timeline-role">Specialist — Human Capital Analytics</div>
       <p class="timeline-desc">Presented insights at board level; conducted predictive HR analytics; led overtime revenue leakage analysis saving significant costs; developed classification models for L&D platform engagement.</p>
-      <div class="timeline-highlights">
-        <span class="highlight-chip">Board-Level Insights</span>
-        <span class="highlight-chip">Revenue Leakage Analysis</span>
-        <span class="highlight-chip">Predictive Analytics</span>
-      </div>
+      <div class="timeline-highlights"><span class="highlight-chip">Board-Level Insights</span><span class="highlight-chip">Revenue Leakage Analysis</span><span class="highlight-chip">Predictive Analytics</span></div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-dot"></div>
-      <div class="timeline-meta">
-        <span class="timeline-period">Feb 2018 – Jan 2019</span>
-        <span class="timeline-company">Landmark Group · Dubai, UAE</span>
-      </div>
+      <div class="timeline-meta"><span class="timeline-period">Feb 2018 – Jan 2019</span><span class="timeline-company">Landmark Group · Dubai, UAE</span></div>
       <div class="timeline-role">Assistant Manager — Talent / HR Analytics</div>
       <p class="timeline-desc">Developed ML model to optimize employee mix across 50+ retail stores, driving revenue improvement. Conducted pilot study linking diversity, performance and experience to staffing strategy.</p>
-      <div class="timeline-highlights">
-        <span class="highlight-chip">Employee Mix ML Model</span>
-        <span class="highlight-chip">50+ Stores</span>
-        <span class="highlight-chip">Workforce Planning</span>
-      </div>
+      <div class="timeline-highlights"><span class="highlight-chip">Employee Mix ML Model</span><span class="highlight-chip">50+ Stores</span><span class="highlight-chip">Workforce Planning</span></div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-dot"></div>
-      <div class="timeline-meta">
-        <span class="timeline-period">Jan 2015 – Jan 2018</span>
-        <span class="timeline-company">Cognizant (CTS) · Hyderabad, India</span>
-      </div>
+      <div class="timeline-meta"><span class="timeline-period">Jan 2015 – Jan 2018</span><span class="timeline-company">Cognizant (CTS) · Hyderabad, India</span></div>
       <div class="timeline-role">Executive — Talent / HR Analytics</div>
       <p class="timeline-desc">Managed talent reporting with predictive dashboards for early attrition detection; applied logistic regression, decision trees and clustering in R & Tableau; created infographic presentations for C-suite.</p>
-      <div class="timeline-highlights">
-        <span class="highlight-chip">Predictive Dashboards</span>
-        <span class="highlight-chip">R & SPSS</span>
-        <span class="highlight-chip">Machine Learning</span>
-      </div>
+      <div class="timeline-highlights"><span class="highlight-chip">Predictive Dashboards</span><span class="highlight-chip">R & SPSS</span><span class="highlight-chip">Machine Learning</span></div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-dot"></div>
-      <div class="timeline-meta">
-        <span class="timeline-period">Sep 2010 – Jan 2015</span>
-        <span class="timeline-company">Deloitte & MWH Global · Hyderabad / Pune</span>
-      </div>
+      <div class="timeline-meta"><span class="timeline-period">Sep 2010 – Jan 2015</span><span class="timeline-company">Deloitte & MWH Global · Hyderabad / Pune</span></div>
       <div class="timeline-role">Senior Analyst → Lead — Talent Analytics</div>
       <p class="timeline-desc">Led global HR reporting and survey analytics at Deloitte; drove Lean Six Sigma quality initiatives; managed employee engagement model at MWH including survey tools, action planning and vendor management with Kenexa.</p>
-      <div class="timeline-highlights">
-        <span class="highlight-chip">Big 4 Consulting</span>
-        <span class="highlight-chip">Lean Six Sigma</span>
-        <span class="highlight-chip">Global HR Reporting</span>
-      </div>
+      <div class="timeline-highlights"><span class="highlight-chip">Big 4 Consulting</span><span class="highlight-chip">Lean Six Sigma</span><span class="highlight-chip">Global HR Reporting</span></div>
     </div>
-
   </div>
 </section>
 
@@ -1177,55 +679,12 @@
   <h2>Real Problems. <em>Data-Driven</em> Outcomes.</h2>
   <p class="section-desc">A sample of high-impact analytics engagements across industries — each starting with a business problem and ending with measurable results.</p>
   <div class="cases-grid fade-in">
-
-    <div class="case-card">
-      <div class="case-number">01</div>
-      <div class="case-industry">Manufacturing · UAE</div>
-      <div class="case-title">Identifying Revenue Leakage Through Overtime Analysis</div>
-      <p class="case-desc">A major organization faced uncontrolled overtime expenditure. Conducted two-year EDA correlating overtime with revenue and production; built interactive dashboards identifying departments misusing overtime without corresponding business need.</p>
-      <div class="case-outcome">✦ New overtime policies implemented · Work-life balance flagged · Cost efficiency improved · Acclaimed by top management</div>
-    </div>
-
-    <div class="case-card">
-      <div class="case-number">02</div>
-      <div class="case-industry">Retail · Dubai</div>
-      <div class="case-title">Optimizing Employee Mix for 50+ Retail Stores</div>
-      <p class="case-desc">Management couldn't explain why some stores outperformed others at similar locations. Built an ML model analyzing diversity, performance levels and experience across stores, tested in a 4-store pilot (2 high, 2 low performers).</p>
-      <div class="case-outcome">✦ Low-performing stores showed significant revenue improvement after 2 months · Model adopted chain-wide</div>
-    </div>
-
-    <div class="case-card">
-      <div class="case-number">03</div>
-      <div class="case-industry">Aviation · India</div>
-      <div class="case-title">Boosting Online Learning Completion Rates</div>
-      <p class="case-desc">Post-COVID shift to Coursera/Udemy saw low participation. Gathered multi-variable data and built classification models to predict course completion, then designed targeted engagement campaigns and incentive policies.</p>
-      <div class="case-outcome">✦ Significant increase in participation & completion rates · Higher employee satisfaction & skill development</div>
-    </div>
-
-    <div class="case-card">
-      <div class="case-number">04</div>
-      <div class="case-industry">Financial Services · India</div>
-      <div class="case-title">Reducing Employee Turnover Using Cluster Analysis</div>
-      <p class="case-desc">Used EDA and cluster analysis on age, marital status, and role level to identify high-risk attrition segments. Created interactive visualization with per-employee drilldown and tailored HR policy interventions per cluster.</p>
-      <div class="case-outcome">✦ Reduced unwanted turnover · Personalized HR policies · Identified stable segments for future benefit investments</div>
-    </div>
-
-    <div class="case-card">
-      <div class="case-number">05</div>
-      <div class="case-industry">IT Sector · India</div>
-      <div class="case-title">Analyzing Sourcing Channel Efficiency Over 6 Years</div>
-      <p class="case-desc">Hypothesis-tested whether referred hires outperform vendor or portal hires in tenure, performance, and utilization across 6 years of data at the 95% confidence level.</p>
-      <div class="case-outcome">✦ Employee referrals showed higher tenure & lower early attrition · Hiring strategy restructured for cost efficiency</div>
-    </div>
-
-    <div class="case-card">
-      <div class="case-number">06</div>
-      <div class="case-industry">Real Estate · Dubai</div>
-      <div class="case-title">SMART KPI Design for DAMAC Sales Teams</div>
-      <p class="case-desc">Designed and automated SMART KPIs for both Sales and Non-Sales functions at DAMAC Properties. Automated monthly reporting via Power BI and provided strategic recommendations to C-suite leadership.</p>
-      <div class="case-outcome">✦ Data-driven performance culture established · Balanced scorecards adopted by senior management</div>
-    </div>
-
+    <div class="case-card"><div class="case-number">01</div><div class="case-industry">Manufacturing · UAE</div><div class="case-title">Identifying Revenue Leakage Through Overtime Analysis</div><p class="case-desc">A major organization faced uncontrolled overtime expenditure. Conducted two-year EDA correlating overtime with revenue and production; built interactive dashboards identifying departments misusing overtime without corresponding business need.</p><div class="case-outcome">✦ New overtime policies implemented · Work-life balance flagged · Cost efficiency improved · Acclaimed by top management</div></div>
+    <div class="case-card"><div class="case-number">02</div><div class="case-industry">Retail · Dubai</div><div class="case-title">Optimizing Employee Mix for 50+ Retail Stores</div><p class="case-desc">Management couldn't explain why some stores outperformed others at similar locations. Built an ML model analyzing diversity, performance levels and experience across stores, tested in a 4-store pilot (2 high, 2 low performers).</p><div class="case-outcome">✦ Low-performing stores showed significant revenue improvement after 2 months · Model adopted chain-wide</div></div>
+    <div class="case-card"><div class="case-number">03</div><div class="case-industry">Aviation · India</div><div class="case-title">Boosting Online Learning Completion Rates</div><p class="case-desc">Post-COVID shift to Coursera/Udemy saw low participation. Gathered multi-variable data and built classification models to predict course completion, then designed targeted engagement campaigns and incentive policies.</p><div class="case-outcome">✦ Significant increase in participation & completion rates · Higher employee satisfaction & skill development</div></div>
+    <div class="case-card"><div class="case-number">04</div><div class="case-industry">Financial Services · India</div><div class="case-title">Reducing Employee Turnover Using Cluster Analysis</div><p class="case-desc">Used EDA and cluster analysis on age, marital status, and role level to identify high-risk attrition segments. Created interactive visualization with per-employee drilldown and tailored HR policy interventions per cluster.</p><div class="case-outcome">✦ Reduced unwanted turnover · Personalized HR policies · Identified stable segments for future benefit investments</div></div>
+    <div class="case-card"><div class="case-number">05</div><div class="case-industry">IT Sector · India</div><div class="case-title">Analyzing Sourcing Channel Efficiency Over 6 Years</div><p class="case-desc">Hypothesis-tested whether referred hires outperform vendor or portal hires in tenure, performance, and utilization across 6 years of data at the 95% confidence level.</p><div class="case-outcome">✦ Employee referrals showed higher tenure & lower early attrition · Hiring strategy restructured for cost efficiency</div></div>
+    <div class="case-card"><div class="case-number">06</div><div class="case-industry">Real Estate · Dubai</div><div class="case-title">SMART KPI Design for DAMAC Sales Teams</div><p class="case-desc">Designed and automated SMART KPIs for both Sales and Non-Sales functions at DAMAC Properties. Automated monthly reporting via Power BI and provided strategic recommendations to C-suite leadership.</p><div class="case-outcome">✦ Data-driven performance culture established · Balanced scorecards adopted by senior management</div></div>
   </div>
 </section>
 
@@ -1237,99 +696,26 @@
     <div>
       <p class="skills-group-title">Analytics & Visualization Tools</p>
       <div class="skills-list">
-        <div class="skill-bar-wrap">
-          <div class="skill-bar-header"><span class="skill-name">Power BI & Tableau</span><span class="skill-pct">Expert</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:95%"></div></div>
-        </div>
-        <div class="skill-bar-wrap">
-          <div class="skill-bar-header"><span class="skill-name">R Studio & SPSS</span><span class="skill-pct">Advanced</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:88%"></div></div>
-        </div>
-        <div class="skill-bar-wrap">
-          <div class="skill-bar-header"><span class="skill-name">Microsoft Excel</span><span class="skill-pct">Expert</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:97%"></div></div>
-        </div>
-        <div class="skill-bar-wrap">
-          <div class="skill-bar-header"><span class="skill-name">SAP BW / SAP SuccessFactors</span><span class="skill-pct">Proficient</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div>
-        </div>
-        <div class="skill-bar-wrap">
-          <div class="skill-bar-header"><span class="skill-name">Machine Learning (H2O, R)</span><span class="skill-pct">Advanced</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:82%"></div></div>
-        </div>
-        <div class="skill-bar-wrap">
-          <div class="skill-bar-header"><span class="skill-name">Infographic & Presentation Design</span><span class="skill-pct">Expert</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:90%"></div></div>
-        </div>
+        <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-name">Power BI & Tableau</span><span class="skill-pct">Expert</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:95%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-name">R Studio & SPSS</span><span class="skill-pct">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:88%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-name">Microsoft Excel</span><span class="skill-pct">Expert</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:97%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-name">SAP BW / SAP SuccessFactors</span><span class="skill-pct">Proficient</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-name">Machine Learning (H2O, R)</span><span class="skill-pct">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:82%"></div></div></div>
+        <div class="skill-bar-wrap"><div class="skill-bar-header"><span class="skill-name">Infographic & Presentation Design</span><span class="skill-pct">Expert</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:90%"></div></div></div>
       </div>
     </div>
-
     <div>
       <p class="skills-group-title">Certifications & Professional Development</p>
       <div class="certs-grid">
-        <div class="cert-item">
-          <div class="cert-dot"></div>
-          <div>
-            <div class="cert-name">HR Analytics</div>
-            <div class="cert-org">Jigsaw Academy</div>
-          </div>
-        </div>
-        <div class="cert-item">
-          <div class="cert-dot"></div>
-          <div>
-            <div class="cert-name">Data Mining & Business Analytics (DMBA)</div>
-            <div class="cert-org">Indian Statistical Institute (ISI)</div>
-          </div>
-        </div>
-        <div class="cert-item">
-          <div class="cert-dot"></div>
-          <div>
-            <div class="cert-name">Human Resources Analytics</div>
-            <div class="cert-org">University of California</div>
-          </div>
-        </div>
-        <div class="cert-item">
-          <div class="cert-dot"></div>
-          <div>
-            <div class="cert-name">Predictive Analytics for Business with H2O in R</div>
-            <div class="cert-org">Coursera</div>
-          </div>
-        </div>
-        <div class="cert-item">
-          <div class="cert-dot"></div>
-          <div>
-            <div class="cert-name">Machine Learning for Everyone Specialization</div>
-            <div class="cert-org">SAS via Coursera</div>
-          </div>
-        </div>
-        <div class="cert-item">
-          <div class="cert-dot"></div>
-          <div>
-            <div class="cert-name">Data Visualization with Tableau</div>
-            <div class="cert-org">Coursera</div>
-          </div>
-        </div>
-        <div class="cert-item">
-          <div class="cert-dot"></div>
-          <div>
-            <div class="cert-name">Business Analytics & Digital Media</div>
-            <div class="cert-org">Indian School of Business (ISB)</div>
-          </div>
-        </div>
-        <div class="cert-item">
-          <div class="cert-dot"></div>
-          <div>
-            <div class="cert-name">Critical Perspectives on Management</div>
-            <div class="cert-org">IE Business School, Madrid</div>
-          </div>
-        </div>
-        <div class="cert-item">
-          <div class="cert-dot"></div>
-          <div>
-            <div class="cert-name">Building AI Powered Chatbots + Intro to AI</div>
-            <div class="cert-org">IBM</div>
-          </div>
-        </div>
+        <div class="cert-item"><div class="cert-dot"></div><div><div class="cert-name">HR Analytics</div><div class="cert-org">Jigsaw Academy</div></div></div>
+        <div class="cert-item"><div class="cert-dot"></div><div><div class="cert-name">Data Mining & Business Analytics (DMBA)</div><div class="cert-org">Indian Statistical Institute (ISI)</div></div></div>
+        <div class="cert-item"><div class="cert-dot"></div><div><div class="cert-name">Human Resources Analytics</div><div class="cert-org">University of California</div></div></div>
+        <div class="cert-item"><div class="cert-dot"></div><div><div class="cert-name">Predictive Analytics for Business with H2O in R</div><div class="cert-org">Coursera</div></div></div>
+        <div class="cert-item"><div class="cert-dot"></div><div><div class="cert-name">Machine Learning for Everyone Specialization</div><div class="cert-org">SAS via Coursera</div></div></div>
+        <div class="cert-item"><div class="cert-dot"></div><div><div class="cert-name">Data Visualization with Tableau</div><div class="cert-org">Coursera</div></div></div>
+        <div class="cert-item"><div class="cert-dot"></div><div><div class="cert-name">Business Analytics & Digital Media</div><div class="cert-org">Indian School of Business (ISB)</div></div></div>
+        <div class="cert-item"><div class="cert-dot"></div><div><div class="cert-name">Critical Perspectives on Management</div><div class="cert-org">IE Business School, Madrid</div></div></div>
+        <div class="cert-item"><div class="cert-dot"></div><div><div class="cert-name">Building AI Powered Chatbots + Intro to AI</div><div class="cert-org">IBM</div></div></div>
       </div>
     </div>
   </div>
@@ -1345,69 +731,36 @@
       <div class="contact-info">
         <div class="contact-item">
           <div class="contact-icon">📞</div>
-          <div class="contact-detail">
-            <small>Phone</small>
-            +91 765 902 6609
-          </div>
+          <div class="contact-detail"><small>Phone</small>+91 765 902 6609</div>
         </div>
         <div class="contact-item">
           <div class="contact-icon">✉️</div>
-          <div class="contact-detail">
-            <small>Email</small>
-            lavan@tasthaintelion.com
-          </div>
+          <div class="contact-detail"><small>Email</small>lavan@tasthaintelion.com</div>
         </div>
         <div class="contact-item">
           <div class="contact-icon">📍</div>
-          <div class="contact-detail">
-            <small>Location</small>
-            Hyderabad, Telangana, India
-          </div>
+          <div class="contact-detail"><small>Location</small>Hyderabad, Telangana, India</div>
         </div>
         <div class="contact-item">
           <div class="contact-icon">🏢</div>
-          <div class="contact-detail">
-            <small>Company</small>
-            TASTHA INTELION
-          </div>
+          <div class="contact-detail"><small>Company</small>TASTHA INTELION</div>
         </div>
       </div>
     </div>
 
-    <div class="contact-form">
-      <div class="form-row">
-        <div class="form-group">
-          <label>Your Name</label>
-          <input type="text" placeholder="Jane Smith" />
-        </div>
-        <div class="form-group">
-          <label>Company</label>
-          <input type="text" placeholder="Acme Corp" />
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" placeholder="jane@acmecorp.com" />
-      </div>
-      <div class="form-group">
-        <label>Service Needed</label>
-        <select>
-          <option value="">Select a service…</option>
-          <option>People Analytics Strategy</option>
-          <option>Dashboard & Visualization</option>
-          <option>Predictive Modelling</option>
-          <option>Performance & KPI Design</option>
-          <option>HR Process Transformation</option>
-          <option>Employee Engagement & Retention</option>
-          <option>Other / Custom</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Message</label>
-        <textarea placeholder="Tell me about your organization and the challenge you're facing…"></textarea>
-      </div>
-      <button class="btn-submit" onclick="handleSubmit(this)">Send Message →</button>
+    <!-- ✅ GOOGLE FORM EMBEDDED HERE -->
+    <div class="google-form-wrap">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeiyy59a71cCR7iZ10FJDQmW2CxRr6kwXdeUdd4HemIxQSc8Q/viewform?embedded=true"
+        width="640"
+        height="961"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Loading…
+      </iframe>
     </div>
+
   </div>
 </section>
 
@@ -1418,41 +771,20 @@
 </footer>
 
 <script>
-  // Intersection Observer for fade-in
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
     });
   }, { threshold: 0.1 });
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  // Form submit
-  function handleSubmit(btn) {
-    btn.textContent = 'Message Sent ✓';
-    btn.style.background = '#22c55e';
-    btn.style.color = 'white';
-    setTimeout(() => {
-      btn.textContent = 'Send Message →';
-      btn.style.background = '';
-      btn.style.color = '';
-    }, 3000);
-  }
-
-  // Smooth nav highlight
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
     let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 120) current = s.id;
-    });
-    navLinks.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--cyan)' : '';
-    });
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+    navLinks.forEach(a => { a.style.color = a.getAttribute('href') === '#' + current ? 'var(--cyan)' : ''; });
   });
 </script>
 </body>
